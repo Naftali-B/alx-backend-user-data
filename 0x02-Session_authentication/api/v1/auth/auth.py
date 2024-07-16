@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-""" Module of auth
+""" auth
 """
+
 from os import getenv
 from flask import request
 from typing import List, TypeVar
 
 
 class Auth:
-    """ Auth Class """
+    """ Authentication Class """
 
     def __init__(self):
         """
@@ -23,11 +24,12 @@ class Auth:
             Require the auth
 
             Args:
-                path: path to authenticate
+                path to authenticate
                 excluded_paths: list of excluded path to authenticate
 
             Return:
-                True if is authenticated otherwise false
+                True if is authenticated
+                False if not
         """
         if path is None or excluded_paths is None or len(excluded_paths) == 0:
             return True

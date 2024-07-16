@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Module of Basicauth
+""" Module for Basic authentication
 """
 from api.v1.auth.auth import Auth
 from base64 import b64decode, binascii
@@ -8,7 +8,7 @@ from typing import TypeVar, List
 
 
 class BasicAuth(Auth):
-    """ Basic Auth class """
+    """ Basic Authentication class """
     def __init__(self):
         """Constructor"""
 
